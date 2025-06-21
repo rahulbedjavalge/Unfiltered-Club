@@ -1,0 +1,235 @@
+/* Unfiltered Club Custom Styles */
+
+/* Main styling */
+.main-header {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Post cards */
+.post-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #FF6B6B;
+    margin: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Mood tags */
+.mood-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.mood-sad { 
+    background: #FFE5E5; 
+    color: #D63384; 
+    border: 1px solid #F8BBD9;
+}
+
+.mood-angry { 
+    background: #FFE5E5; 
+    color: #DC3545; 
+    border: 1px solid #F5C6CB;
+}
+
+.mood-meh { 
+    background: #FFF3CD; 
+    color: #F57C00; 
+    border: 1px solid #FFEAA7;
+}
+
+.mood-lol { 
+    background: #D1ECF1; 
+    color: #0C63E4; 
+    border: 1px solid #BEE5EB;
+}
+
+.mood-happy { 
+    background: #D4EDDA; 
+    color: #198754; 
+    border: 1px solid #C3E6CB;
+}
+
+.mood-confused { 
+    background: #E2E3E5; 
+    color: #6C757D; 
+    border: 1px solid #D6D8DB;
+}
+
+/* AI replies */
+.ai-reply {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    font-style: italic;
+    border-left: 4px solid #4ECDC4;
+}
+
+.ai-reply strong {
+    color: #FFE4E1;
+}
+
+/* Comments */
+.comment-card {
+    background: #F8F9FA;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    border-left: 2px solid #DEE2E6;
+}
+
+/* Timestamps */
+.timestamp {
+    color: #999;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Buttons */
+.reaction-btn {
+    background: none;
+    border: 1px solid #DEE2E6;
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reaction-btn:hover {
+    background: #F8F9FA;
+    transform: scale(1.1);
+}
+
+/* Form styling */
+.confession-form {
+    background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    border: 1px solid #DEE2E6;
+}
+
+/* Sidebar styling */
+.sidebar-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* Achievement badges */
+.achievement-unlocked {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 0.25rem 0;
+    font-weight: bold;
+}
+
+.achievement-locked {
+    background: #E9ECEF;
+    color: #6C757D;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 0.25rem 0;
+}
+
+/* Loading animations */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 2rem;
+    }
+    
+    .post-card {
+        padding: 1rem;
+    }
+    
+    .confession-form {
+        padding: 1rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .post-card {
+        background: #2D3748;
+        color: #E2E8F0;
+    }
+    
+    .comment-card {
+        background: #4A5568;
+        color: #E2E8F0;
+    }
+    
+    .confession-form {
+        background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
+        color: #E2E8F0;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #FF5252, #26C6DA);
+}
